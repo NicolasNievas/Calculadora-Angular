@@ -1,0 +1,76 @@
+/* Estilos personalizados para la calculadora */
+.calculator-container {
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Estilos para los valores de entrada y los botones */
+.input-section input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.operations-section button {
+  width: 20%;
+  padding: 10px;
+  font-size: 16px;
+  margin: 5px;
+}
+
+.clear-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilos para el resultado */
+.result-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+  
+.containerTotal {
+    margin: 40px auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    max-width: 400px; 
+    padding: 20px; 
+  }
+  
+
+  .containerValores,
+  .containerResultado {
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 10px; 
+  }
+  
+
+  .containerBotones {
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 10px; 
+  }
+  
+  .resultado {
+    text-align: center;
+  }
+  
+
+  .resultado p {
+    width: 100%; 
+    padding: 5px;
+    background-color: #f0f0f0; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+  }
+  

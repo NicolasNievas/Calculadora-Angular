@@ -1,0 +1,39 @@
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+  crossorigin="anonymous"
+/>
+<h2 class="text-center">Calculadora</h2>
+<div class="containerTotal">
+  <div class="containerCalculadora">
+
+    <div class="containerValores form-inline">
+      <div class="form-group mr-2">
+        <label for="numero1">Número 1:</label>
+        <input type="number" class="form-control" id="numero1" [(ngModel)]="n1">
+      </div>
+      <div class="form-group">
+        <label for="numero2">Número 2:</label>
+        <input type="number" class="form-control" id="numero2" [(ngModel)]="n2">
+      </div>
+    </div>
+  </div>
+
+  <div class="containerCalculador">
+    <div class="containerBotones">
+      <app-botones (limpiarResultadoEvent)="acLimpiar()" (operacionSeleccionada)="realizarOperacion($event)"></app-botones>
+    </div>
+  </div>
+
+  <div class="containerResultado">
+    <label for="">Resultado:</label>
+    <p class="resultado">{{ resultado }}</p>
+  </div>
+</div>
+
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+  crossorigin="anonymous"
+></script>
